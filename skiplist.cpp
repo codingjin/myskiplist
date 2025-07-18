@@ -210,6 +210,7 @@ int main() {
     SkipList<int, int> *skip_list = new SkipList<int, int>(16);
     std::cin >> N >> K >> M;
 
+    // insert
     for (int i = 0; i < N; i++) {
         int key;
         int value;
@@ -221,7 +222,7 @@ int main() {
         }
     }
 
-    // 删除数据
+    // del
     for (int i = 0; i < K; i++) {
         int k;
         std::cin >> k;
@@ -229,7 +230,7 @@ int main() {
     }
 
 
-    // 搜索
+    // search
     for (int i = 0; i < M; i++) {
         int key;
         std::cin >> key;
